@@ -27,11 +27,13 @@ public class BookMainApp {
         book1.setId("123");
 
         // create book object and populate some values
-        Book book2 = new Book();
-        book2.setId("124");
-        book2.setName("Apache Cassandra Essential");
-        book2.setAuthor("Ranjeet");
-        book2.setReviewer("ranjeet Jha");
+        Book book2 = new Book("vishl", "Apache", "Ran", "123");
+        book2.getAllValues(book2);
+//        book2.setId("124");
+//        book2.setName("Apache Cassandra Essential");
+//        book2.setAuthor("Ranjeet");
+//        book2.setReviewer("ranjeet Jha");
+
 
         // create bookstore, assigning book
         Bookstore bookstore = new Bookstore();

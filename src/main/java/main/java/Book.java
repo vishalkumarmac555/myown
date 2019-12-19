@@ -3,6 +3,8 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 @XmlRootElement(name = "book")
 // arrange property/element order of xml element, this is Optional
@@ -13,6 +15,13 @@ public class Book {
     private String author;
     private String reviewer;
     private String id;
+
+    public Book(String name, String author, String reviewer, String id) {
+        this.name = name;
+        this.author = author;
+        this.reviewer = reviewer;
+        this.id = id;
+    }
 
     // If you like the variable name, e.g. "name", you can easily change this
     // name for your XML-Output:
@@ -49,6 +58,17 @@ public class Book {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+
+    public Book() {
+    }
+
+    public ArrayList<Book> getAllValues(Book book){
+        List<Book> a = new ArrayList<Book>();
+        a.add(book);
+        System.out.println( a.get(0).author);
+        return (ArrayList<Book>) a;
     }
 
 }

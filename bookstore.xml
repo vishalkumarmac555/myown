@@ -5,9 +5,9 @@
             <author>Ranjeet</author>
             <bookName>Real-time Analytics with Storm and Cassandra</bookName>
         </book>
-        <book id="124" reviewer="ranjeet Jha">
-            <author>Ranjeet</author>
-            <bookName>Apache Cassandra Essential</bookName>
+        <book id="123" reviewer="Ran">
+            <author>Apache</author>
+            <bookName>vishl</bookName>
         </book>
     </bookList>
     <location>South Ex, Delhi</location>
